@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>FiveM Coords Menu</title>
+</head>
+<body>
+    <div class="coords-menu" id="coords-menu-one">
+        <div class="coords-menu-header">
+            <h1>Coords Menu</h1>
+            <h2>Rework by ato</h2>
+            <span id="close">&times;</span>
+        </div>
+        <div id="scroller">
+            <div class="coords-menu-element">
+                <a class="button" id="c-vec3">Copy coords - vec3(X, Y, Z)</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="c-table">Copy coords - {X, Y, Z}</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="c-tablei">Copy coords - {x = X, y = Y, z = Z}</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="c-X">Copy coords - X value</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="c-Y">Copy coords - Y value</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="c-Z">Copy coords - Z value</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="h-W">Copy heading - W value</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="ch-vec4">Copy coords & heading - vec4(X, Y, Z, W)</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="ch-table">Copy coords & heading - {X, Y, Z, W}</a>
+            </div>
+            <div class="coords-menu-element">
+                <a class="button" id="ch-tablei">Copy coords & heading - {x = X, y = Y, z = Z, w = W}</a>
+            </div>
+        </div>
+    </div>
+    <div class="notification" id="notificationContainer"></div>
+</body>
+</html>

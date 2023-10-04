@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f1f2a;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+.coords-menu {
+    display: none;
+    transition: ease 0.3s;
+    position: absolute;
+    width: calc(30vw - 20px);
+    height: 70vh;
+    top: 40%;
+    left: 18%;
+    background: radial-gradient(#171a22, #0b0c0f);
+    transform:translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 0px;
+    user-select: none;
+}
+
+.coords-menu #scroller {
+    position: absolute;
+    overflow-y: scroll;
+    height: 58vh;
+    width: calc(30vw - 20px);
+    border-radius: 12px;
+}
+
+.coords-menu-header h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    color: white;
+}
+
+.coords-menu-header h2 {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-weight: 20;
+    font-size: 12px;
+    top: 50px;
+    color: white;
+}
+
+.coords-menu-header #close {
+    position: absolute;
+    top: 10px;
+    right: 45px;
+    font-size: 50px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.coords-menu-header #close:hover {
+    color: rgb(132, 132, 132);
+}
+
+.coords-menu-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: #2525253e;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.coords-menu-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coords-menu-element .button {
+    background-color: #35394761;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    border-radius: 1px;
+    padding: 15px;
+    margin: 5px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    width: 100%;
+    border: 3px solid #35394761;
+    transition: ease 0.3s;
+}
+
+.coords-menu-element .button:hover {
+    background-color: #5a5e6f61;
+    border: 3px solid #ffffff3e;
+}
+
+.coords-menu-element .button:active {
+    background-color: #5a5e6f61;
+    border: 3px solid #ffffff;
+}
+
+.notification {
+    display: none;
+    position: absolute;
+    background-color: #0e0f169f;
+    left: 50%;
+    top: 15px;
+    max-width: 30vw;
+    transform:translate(-50%, 0px);
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
